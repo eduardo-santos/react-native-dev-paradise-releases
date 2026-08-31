@@ -1,6 +1,6 @@
 <div align="center">
 
-# React Native Dev Paradise
+# React Native Dev Paradise 🏝️ 
 
 **Run your React Native projects without a terminal.**
 
@@ -12,8 +12,7 @@ so you can stop juggling terminal tabs.
 ![Windows](https://img.shields.io/badge/Windows-10%20%26%2011-0078D6?style=flat-square&logo=windows)
 ![Linux](https://img.shields.io/badge/Linux-deb%20%26%20tar.gz-F0A81B?style=flat-square&logo=linux)
 
-<img alt="React Native Dev Paradise — projects, commands and logs in one window" width="900" src="https://github.com/user-attachments/assets/8edec80f-4eea-4110-862d-c7e762f843ba" />
-
+https://github.com/user-attachments/assets/af624e8b-6ee4-4fed-8c8d-14c825c25e79
 </div>
 
 ---
