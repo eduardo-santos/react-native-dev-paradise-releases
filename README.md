@@ -37,13 +37,29 @@ Grab the file for your system from the **[latest release](../../releases/latest)
 
 | System | File | Notes |
 |---|---|---|
-| **macOS** | `…-macos.pkg` | Intel and Apple silicon, one build for both. First launch: right-click → **Open**. |
+| **macOS** | `…-macos.pkg` | Intel and Apple silicon, one build for both. See the note below. |
 | **Windows** | `…-windows.zip` | Unzip, then run **`Install React Native Dev Paradise.cmd`**. |
 | **Linux** | `…_all.deb` | Debian, Ubuntu, Mint, Pop!_OS — double-click and the desktop's installer takes over. |
 | **Linux** | `…-linux.tar.gz` | Everything else. Unpack and run `./install.sh` — installs for you only, no root needed. |
 
 **Node.js 20 or newer** is the one thing it needs. If you have not got it, the installer says so and offers to
 install it for you rather than failing quietly.
+
+### macOS: "Apple could not verify…"
+
+macOS blocks any download that is not signed with a paid Apple Developer ID, and says so in alarming
+words. Nothing is wrong with the app — macOS simply cannot tell who built it. It takes one answer, once.
+
+**Either** open the file, dismiss the warning, then go to  **System Settings → Privacy & Security**,
+scroll down to **Security**, and press **Open Anyway** next to the app's name.
+
+**Or** run this first, then open the file normally:
+
+```sh
+xattr -dr com.apple.quarantine ~/Downloads/react-native-dev-paradise-*-macos.*
+```
+
+> Guides that tell you to **right-click → Open** are out of date: macOS 15 removed that shortcut.
 
 > The app runs entirely on your own machine. It opens in your browser at `127.0.0.1` and talks to nothing
 > else — no account, no telemetry, no cloud.
@@ -72,3 +88,4 @@ you left off. Delete that folder if you want a clean slate.
 Made by [edu90k](https://github.com/eduardo-santos)
 
 </div>
+
